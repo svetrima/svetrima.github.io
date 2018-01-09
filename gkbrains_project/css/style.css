@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
+
+
+#telegram {
+    font-family: "icomoon";
+    color: #9a8e8e;
+    font-size: 22px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 22px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+/*HEADER-TOP*/
+
+#header {
+    height: 800px;
+    /*14%;*/
+    background-image: url('../img/slider-img.jpg');
+    margin-bottom: 80px;
+}
+
+.header-top img {
+    margin-left: 98px;
+    /* 7.2%;*/
+    margin-top: 63px;
+    /*7.9%;*/
+    border: 0;
+
+}
+
+.menu {
+    float: right;
+    margin-right: 211px;
+    margin-top: 67px;
+}
+
+.menu li {
+    float: left;
+    list-style-type: none;
+}
+
+.menu li a {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #8c8c8c;
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 3;
+    text-align: right;
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #212121;
+    font-size: 0.875em;
+    font-weight: 700;
+    line-height: 2.8125;
+    text-align: right;
+    border-bottom: 3px solid black;
+
+}
+
+/*.search a{
+    display: block;
+    width:23px;
+    height:23px;
+}*/
+
+.search {
+    background-image: url(../img/search.png);
+    width: 23px;
+    height: 23px;
+    margin-top: 11px;
+}
+
+/*HEADER_PAGE*/
+
+#header-page {
+    height: 360px;
+    background-color: #f5f5f5;
+    margin-bottom: 98px;
+}
+
+/*PROMO*/
+
+.promo-title {
+    color: #212121;
+    font-size: 3.875em;
+    font-weight: 100;
+    line-height: 1.161;
+    text-align: left;
+    margin-left: 106px;
+    /*51%*/
+    margin-bottom: 32px;
+}
+
+.promo-smtitle {
+    color: #43a047;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 2.667;
+    text-align: left;
+    margin-left: 98px;
+    /*7.2%*/
+    margin-top: 300px;
+}
+
+.promo-text {
+    color: #6c6c6c;
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 1.714;
+    text-align: left;
+    margin-left: 98px;
+    /*7.2%*/
+    width: 458px;
+    /*33.5%*/
+}
+
+/*.promo a{
+    background-color:#ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    display: block;
+    line-height: 45px;
+    border-radius: 45px;
+    text-decoration: none;
+    color:#212121;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 98px;
+}*/
+
+.btn {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    display: block;
+    line-height: 45px;
+    border-radius: 45px;
+    text-decoration: none;
+    color: #212121;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 98px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #ffffff url(../img/arrow.png) no-repeat 173px 16px;
+}
+
+/*CONTENT*/
+
+.features {
+    margin-left: 107px;
+}
+
+.features li {
+    list-style-type: none;
+    float: left;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.features li a {
+    color: #6c6c6c;
+    font-size: 2.25em;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 15px 5px 5px;
+}
+
+.features li a:hover {
+    border-bottom: 3px solid #212121;
+    color: #212121;
+    font-size: 2.25em;
+    font-weight: 700;
+    text-align: left;
+}
+
+.explore {
+    float: right;
+    margin-right: 106px;
+}
+
+.explore a {
+    display: block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #212121;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 2.75;
+    text-align: center;
+}
+
+.explore a:hover {
+    background: url(../img/arrow.png) no-repeat 150px 19px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*CATALOG*/
+
+.catalog-item {
+    margin-top: 40px;
+    margin-left: 107px;
+    margin-bottom: 120px;
+}
+
+.list-item {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.list-item:last-child {
+    margin-right: 0;
+}
+
+/*EXCLUSIVE*/
+
+.exclusive {
+    margin-bottom: 120px;
+}
+
+.exclusive-one {
+    display: inline-block;
+    width: 683px;
+    height: 683px;
+    background-image: url(../img/item/promo-img1.jpg);
+}
+
+.exclusive-two {
+    display: inline-block;
+    width: 683px;
+    height: 683px;
+    background-image: url(../img/item/promo-img.jpg);
+}
+
+h6 {
+    color: #1e88e5;
+    font-size: 1.125em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 2.667;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-top: 230px;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+.exclusive-title {
+    margin-left: 50px;
+    color: #212121;
+    font-size: 2.25em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.exclusive-text {
+    font-family: Montserrat;
+    color: #6c6c6c;
+    font-size: 0.874em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 1.716;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    -webkit-transform: scaleY(1.0022);
+    transform: scaleY(1.0022);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    margin-left: 50px;
+    width: 374px;
+}
+
+/*TRENDING*/
+
+.trend-title {
+    margin-left: 98px;
+    color: #212121;
+    font-size: 2.25em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    display: inline-block;
+}
+
+.trend-top {
+    margin-bottom: 80px;
+}
+
+.trend-item {
+    margin-left: 98px;
+    margin-bottom: 120px;
+}
+
+.trend {}
+
+/*HOT_DEAL*/
+
+.hot-deal {
+    background-image: url(../img/slider.jpg);
+    height: 800px;
+    margin-bottom: 120px;
+}
+
+.deal-smtitle {
+    margin-left: 98px;
+    padding-top: 287px;
+    color: #e53935;
+    font-size: 1.125em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 2.667;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.deal-title {
+    color: #212121;
+    font-size: 3.875em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 1.161;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-left: 98px;
+}
+
+.deal-text {
+    color: #6c6c6c;
+    font-size: 0.875em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 1.714;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-left: 98px;
+    width: 458px;
+}
+
+/*EX_BIG*/
+
+.exclusive-threebig {
+    float: left;
+    background-image: url(../img/item/product-1-lg.jpg);
+    width: 570px;
+    height: 570px;
+    margin-right: 30px;
+    margin-left: 98px;
+}
+
+.exclusive-item {
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+/*MOBILE_APP*/
+
+.mobile-app {
+    background-image: url(../img/back-img.jpg);
+    height: 516px;
+}
+
+.ma {
+    color: #6c6c6c;
+    font-size: 1.125em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 2.667;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-left: 99px;
+    padding-top: 125px;
+    margin-bottom: 12px;
+}
+
+.fff {
+    color: #212121;
+    font-size: 3.125em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 1.161;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-left: 106px;
+    margin-bottom: 26px;
+    width: 420px;
+    text-transform: uppercase;
+}
+
+.mobile-text {
+    width: 413px;
+    color: #6c6c6c;
+    font-size: 1.375em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 1.091;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 23px;
+    margin-left: 99px;
+}
+
+.fff-next {
+    display: none;
+}
+
+.appstore,
+.gglplay {
+    display: inline-block;
+
+}
+
+.appstore {
+    margin-left: 98px;
+    margin-right: 10px;
+}
+
+/*FOOTER*/
+
+.main-footer {
+    background: #f7f7f7;
+}
+
+.footer {
+    margin-left: 99px;
+
+}
+
+.footer div:not(.social-icon) {
+    vertical-align: top;
+    margin-top: 120px;
+}
+
+.contact {
+    display: inline-block;
+    width: 223px;
+    margin-right: 80px;
+}
+
+.contact p,
+.suscribe p {
+    color: #212121;
+    font-size: 0.875em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 1.571;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.phone-email a {
+    text-decoration: none;
+}
+
+.information,
+.location {
+    display: inline-block;
+}
+
+.information {
+    width: 392px;
+}
+
+.information ul {
+    list-style-type: none;
+
+}
+
+.information li a {
+    display: block;
+    text-decoration: none;
+    color: #212121;
+    font-size: 0.875em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 1.857;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.suscribe {
+    float: right;
+    width: 375px;
+    margin-right: 105px;
+}
+
+.footer-title {
+    color: #6c6c6c;
+    font-size: 1.125em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 1.333;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+/*FORM*/
+
+.send-email {
+    width: 351px;
+    position: relative;
+}
+
+input[type="text"] {
+    height: 48px;
+    padding-left: 19px;
+    width: 100%;
+    color: #6c6c6c;
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 1.571;
+    text-align: left;
+    border-width: 1px;
+    border-color: #d9dee1;
+    border-style: solid;
+    background-color: #ffffff;
+}
+
+input[type="submit"] {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    cursor: pointer;
+    /*border-width: 1px;
+    border-color:#d9dee1;
+    border-style: solid;*/
+    border: none;
+    background-color: #ffffff;
+    width: 46px;
+    height: 46px;
+}
+
+/*copyright*/
+
+copyright {
+    color: #6c6c6c;
+    font-size: 0.75em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 2.167;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 158px;
+}
+
+.privacy {
+    color: #6c6c6c;
+    font-size: 0.75em;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 2.167;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/*SOCIAL_ICON*/
+
+.footer-low {
+    margin-right: 101px;
+    margin-bottom: 38px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 172px;
+}
+
+.social {
+    width: 28px;
+    height: 28px;
+    background: url(../img/social-links.png);
+    padding-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social:last-child {
+    padding-right: 0;
+}
+
+.social:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.icon-fb {
+    background-position: 0px 0px;
+}
+
+.icon-tw {
+    background-position: -34px 0px;
+}
+
+.icon-ggl {
+    background-position: -67px 0px;
+}
+
+.icon-pinterest {
+    background-position: -101px 0px;
+}
+
+/*page-contact*/
+
+#header-page .header-top {
+    margin-bottom: 171px;
+}
+
+.contact-title {
+    color: #212121;
+    font-size: 62px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 72px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    display: inline-block;
+    margin-left: 101px;
+}
+
+.map-location {
+    border-width: 1px;
+    border-color: #9c9c9c;
+    border-style: solid;
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 368px;
+    height: 368px;
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.map-location:first-child {
+    margin-left: 98px;
+
+}
+
+.map-location:last-child {
+    margin-right: 0;
+}
+
+.loc {
+    display: block;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.icon-location {
+    font-family: 'icomoon';
+    color: #212121;
+    font-size: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 30px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-smtitle {
+    color: #6c6c6c;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 20.082px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+
+
+}
+
+.contact-content,
+.loc a {
+
+    color: #212121;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 20.082px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.location {
+    color: #6c6c6c;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 20.082px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    -webkit-transform: scaleX(1.0041);
+    transform: scaleX(1.0041);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.area {
+    color: #212121;
+    font-size: 21.91px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 30px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    -webkit-transform: scaleX(1.0041);
+    transform: scaleX(1.0041);
+    margin-bottom: 23px;
+}
+
+.loc a {
+    text-decoration: none;
+    display: block;
+}
+
+.loc i {
+    margin-bottom: 15px;
+}
+
+.map-location {
+    margin-bottom: 122px;
+}
+
+
+/*OVERLAY*/
+
+.overlay img:hover {
+    outline: 1px solid #9c9c9c;
+    background-color: #ffffff;
+    opacity: 0.1;
+}
