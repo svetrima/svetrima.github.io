@@ -519,11 +519,11 @@ h6 {
     text-transform: uppercase;
 }
 
-.left {
+.slterms {
     float: left;
 }
 
-.right {
+.careers {
     float: right;
 }
 
@@ -583,7 +583,7 @@ input[type="submit"] {
 
 /*copyright*/
 
-copyright {
+.copyright {
     color: #6c6c6c;
     font-size: 0.75em;
     /* Приближение из-за подстановки шрифтов */
@@ -653,7 +653,11 @@ copyright {
 .icon-pinterest {
     background-position: -101px 0px;
 }
-
+footer::after{
+	display:table;
+	clear:both;
+	content:"";
+}
 /*page-contact*/
 
 #header-page .header-top {
