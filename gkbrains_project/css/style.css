@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700');
 
 
 #telegram {
     font-family: "icomoon";
     color: #9a8e8e;
     font-size: 22px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     line-height: 22px;
 }
@@ -13,6 +12,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -23,6 +23,8 @@ h1 {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size:16px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -35,17 +37,129 @@ body {
 #header {
     height: 800px;
     /*14%;*/
-    background-image: url('../img/slider-img.jpg');
-    margin-bottom: 80px;
+    /*background-image: url('../img/slider-img.jpg');*/
+    margin-bottom: 112px;
+    position:relative;
+    overflow: hidden;
 }
 
-.header-top img {
+/*SSSLLLLIIIIIDDDDEEEEERRRRRRRRR*********************/
+.slider{
+  position:relative;
+  text-align:center;
+  background-color:lightyellow;
+  height:800px;
+}
+.slider>input{
+  display:none; /*прячем радиобаттоны*/
+}
+.slider>input + label{
+  display:block;
+  position:relative;
+  z-index:99;
+  width:27px;
+  height:27px;
+  border-radius:50%;
+  cursor:pointer;
+  background-color: rgba(33, 33, 33, 0.2);
+  float:left;
+  left:45%;
+  margin-right:10px;
+  bottom:-700px;
+}
+.slider > input + label:hover {
+ background-color: #212121;
+}
+.slider > input:checked + label {
+  background-color: #212121;
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.slider > div {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    }
+
+    .slider > input:checked + label + div {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.2s ease-out 1s;
+       
+    }
+.slider img{
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+/***************************************end SLIDER****/
+/*SLIDER TWO*/
+.slider1{
+  position:relative;
+  text-align:center;
+  background-color:lightyellow;
+  height:800px;
+}
+.slider1>input{
+  display:none; /*прячем радиобаттоны*/
+}
+.slider1>input + label{
+  display:block;
+  position:relative;
+  z-index:99;
+ width:27px;
+  height:27px;
+  border-radius:50%;
+  cursor:pointer;
+  background: rgba(90, 90, 90, 0.8);
+  float:left;
+  left:50%;
+  margin-right:10px;
+  bottom:-700px;
+}
+.slider1 > input + label:hover {
+   background-color: #212121;
+}
+.slider1 > input:checked + label {
+  background-color: #212121;
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.slider1 > div {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    }
+
+    .slider1 > input:checked + label + div {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+.slider1 img{
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+
+/*END SLIDER TWO*/
+.header-top{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+}
+.header-top .logo {
     margin-left: 98px;
     /* 7.2%;*/
     margin-top: 63px;
     /*7.9%;*/
     border: 0;
-
+    position:absolute;
+  top:0;
+    z-index: 99;
 }
 
 .menu {
@@ -53,7 +167,6 @@ body {
     margin-right: 211px;
     margin-top: 54px;
 }
-
 .menu li {
     float: left;
     list-style-type: none;
@@ -102,18 +215,28 @@ body {
     background-color: #f5f5f5;
     margin-bottom: 98px;
 }
-
+/*HEADER_PAGE_DETAILS*/
+#header-prs-details{
+    margin-bottom: 29px;
+    border:1px solid black;
+    height:100px;
+    position: relative;
+}
 /*PROMO*/
-
+.promo{
+  position:absolute;
+  top:20%;
+}
 .promo-title {
     color: #212121;
-    font-size: 3.875em;
+    font-size: 57px;
     font-weight: 100;
-    line-height: 1.161;
+    line-height: 49px;
     text-align: left;
-    margin-left: 106px;
+    margin-left: 97px;
     /*51%*/
-    margin-bottom: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
 .promo-smtitle {
@@ -124,7 +247,8 @@ body {
     text-align: left;
     margin-left: 98px;
     /*7.2%*/
-    margin-top: 300px;
+    margin-top: 260px;
+    letter-spacing: 1px;
 }
 
 .promo-text {
@@ -170,18 +294,19 @@ body {
     font-weight: 700;
     text-align: center;
     margin-left: 98px;
-    margin-top: 20px;
+    margin-top: 8px;
     text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .btn:hover {
-    background: #ffffff url(../img/arrow.png) no-repeat 173px 16px;
+    background: #ffffff url(../img/arrow.png) no-repeat 180px 16px;
 }
 
 /*CONTENT*/
 
 .features {
-    margin-left: 107px;
+    margin-left: 100px;
 }
 
 .features li {
@@ -226,7 +351,7 @@ body {
 }
 
 .explore a:hover {
-    background: url(../img/arrow.png) no-repeat 150px 19px;
+    background: url(../img/arrow.png) no-repeat 150px 17px;
 }
 
 .clearfix {
@@ -236,14 +361,14 @@ body {
 /*CATALOG*/
 
 .catalog-item {
-    margin-top: 40px;
-    margin-left: 107px;
-    margin-bottom: 120px;
+    margin-top: 55px;
+    margin-left: 98px;
+    margin-bottom: 90px;
 }
 
 .list-item {
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 26px;
     margin-bottom: 25px;
 }
 
@@ -253,9 +378,9 @@ body {
 
 /*EXCLUSIVE*/
 
-.exclusive {
-    margin-bottom: 120px;
-}
+/*.exclusive {
+    margin-bottom: 111px;
+}*/
 
 .exclusive-one {
     display: inline-block;
@@ -271,13 +396,11 @@ body {
     background-image: url(../img/item/promo-img.jpg);
 }
 
-h6 {
+h6:not(.ma) {
     color: #1e88e5;
     font-size: 1.125em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 2.667;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     margin-top: 230px;
     margin-left: 50px;
@@ -288,7 +411,6 @@ h6 {
     margin-left: 50px;
     color: #212121;
     font-size: 2.25em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     text-align: left;
 }
@@ -297,14 +419,11 @@ h6 {
     font-family: Montserrat;
     color: #6c6c6c;
     font-size: 0.874em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     line-height: 1.716;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     -webkit-transform: scaleY(1.0022);
     transform: scaleY(1.0022);
-    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
     margin-left: 50px;
     width: 374px;
 }
@@ -315,19 +434,20 @@ h6 {
     margin-left: 98px;
     color: #212121;
     font-size: 2.25em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     text-align: left;
     display: inline-block;
 }
 
 .trend-top {
-    margin-bottom: 80px;
+    margin-bottom: 62px;
+    
+    margin-top: 111px;
 }
 
 .trend-item {
     margin-left: 98px;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
 }
 
 .trend {}
@@ -335,20 +455,22 @@ h6 {
 /*HOT_DEAL*/
 
 .hot-deal {
-    background-image: url(../img/slider.jpg);
+   /* background-image: url(../img/slider.jpg);*/
     height: 800px;
     margin-bottom: 120px;
+    position: relative;
 }
-
+.deal-content{
+  position:absolute;
+  top:0;
+}
 .deal-smtitle {
     margin-left: 98px;
     padding-top: 287px;
     color: #e53935;
     font-size: 1.125em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 2.667;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     text-transform: uppercase;
 }
@@ -356,10 +478,8 @@ h6 {
 .deal-title {
     color: #212121;
     font-size: 3.875em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 100;
     line-height: 1.161;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     margin-left: 98px;
 }
@@ -367,10 +487,8 @@ h6 {
 .deal-text {
     color: #6c6c6c;
     font-size: 0.875em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     line-height: 1.714;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     margin-left: 98px;
     width: 458px;
@@ -385,11 +503,12 @@ h6 {
     height: 570px;
     margin-right: 30px;
     margin-left: 98px;
+    margin-bottom: 120px;
 }
 
 .exclusive-item {
     float: left;
-    margin: 0 30px 30px 0;
+    margin: 0 30px 25px 0;
 }
 
 /*MOBILE_APP*/
@@ -402,10 +521,8 @@ h6 {
 .ma {
     color: #6c6c6c;
     font-size: 1.125em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 2.667;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     margin-left: 99px;
     padding-top: 125px;
@@ -415,10 +532,8 @@ h6 {
 .fff {
     color: #212121;
     font-size: 3.125em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 100;
     line-height: 1.161;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     margin-left: 106px;
     margin-bottom: 26px;
@@ -430,10 +545,8 @@ h6 {
     width: 413px;
     color: #6c6c6c;
     font-size: 1.375em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     line-height: 1.091;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     margin-bottom: 23px;
     margin-left: 99px;
@@ -480,10 +593,8 @@ h6 {
 .suscribe p {
     color: #212121;
     font-size: 0.875em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     line-height: 1.571;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     margin-bottom: 20px;
 }
@@ -511,10 +622,8 @@ h6 {
     text-decoration: none;
     color: #212121;
     font-size: 0.875em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 1.857;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     text-transform: uppercase;
 }
@@ -536,10 +645,8 @@ h6 {
 .footer-title {
     color: #6c6c6c;
     font-size: 1.125em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 1.333;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 22px;
@@ -569,8 +676,8 @@ input[type="text"] {
 
 input[type="submit"] {
     position: absolute;
-    top: 2px;
-    right: 0;
+    top: 2%;
+    right: 1%;
     cursor: pointer;
     /*border-width: 1px;
     border-color:#d9dee1;
@@ -586,10 +693,8 @@ input[type="submit"] {
 .copyright {
     color: #6c6c6c;
     font-size: 0.75em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 2.167;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     text-transform: uppercase;
     display: inline-block;
@@ -599,10 +704,8 @@ input[type="submit"] {
 .privacy {
     color: #6c6c6c;
     font-size: 0.75em;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 2.167;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     text-transform: uppercase;
     display: inline-block;
@@ -660,20 +763,19 @@ footer::after{
 }
 /*page-contact*/
 
-#header-page .header-top {
-    margin-bottom: 165px;
+#header-page /*.header-top*/ {
+   /* margin-bottom: 165px;*/
 }
 
 .contact-title {
     color: #212121;
     font-size: 58px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 100;
     line-height: 72px;
-    /* Приближение из-за подстановки шрифтов */
     text-align: left;
     display: inline-block;
     margin-left: 101px;
+    margin-top: 165px;
 }
 
 .map-location {
@@ -708,10 +810,8 @@ footer::after{
     font-family: 'icomoon';
     color: #212121;
     font-size: 48px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     line-height: 30px;
-    /* Приближение из-за подстановки шрифтов */
     text-align: center;
     margin-bottom: 15px;
 }
@@ -719,24 +819,18 @@ footer::after{
 .contact-smtitle {
     color: #6c6c6c;
     font-size: 14px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 20.082px;
-    /* Приближение из-за подстановки шрифтов */
     text-align: center;
-
 
 }
 
 .contact-content,
 .loc a {
-
     color: #212121;
     font-size: 14px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 20.082px;
-    /* Приближение из-за подстановки шрифтов */
     text-align: center;
     margin-bottom: 15px;
 }
@@ -744,23 +838,18 @@ footer::after{
 .location {
     color: #6c6c6c;
     font-size: 14px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     line-height: 20.082px;
-    /* Приближение из-за подстановки шрифтов */
     text-align: center;
     -webkit-transform: scaleX(1.0041);
     transform: scaleX(1.0041);
-    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
 }
 
 .area {
     color: #212121;
     font-size: 21.91px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 30px;
-    /* Приближение из-за подстановки шрифтов */
     text-align: center;
     -webkit-transform: scaleX(1.0041);
     transform: scaleX(1.0041);
@@ -782,39 +871,273 @@ footer::after{
 
 
 /*OVERLAY*/
-.overlay{
+
+
+.list-item{
     position:relative;
 }
-.overlay img:hover {
-    outline: 1px solid #9c9c9c;
-    background-color: #ffffff;
-    opacity: 0.5;
+.list-item>img{
+    opacity: 1;
+    display: block;
+    width:100%;
+    height: auto;
 }
-.btn-overlay, 
-.title-overlay,
 .content-overlay{
-    display: none;
-}/*
-.btn-overlay{
+    position: absolute;
+    top:20%;
+    left:11.9%;
+    right: 11.9%;
+}
+.content-overlay h5{
+    font-family: Montserrat;
+    color:#212121;
+    font-size: 21.91px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    transform: scaleX(1.0041);
+    margin-bottom: 10px;
+}
+.content-overlay p{
+    color:#6c6c6c;
+    font-size: 13.94px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    transform: scaleX(1.0041);
+}
+.content-overlay a{
+    display: block;
     border-radius: 50%;
     background-color:#ffffff;
     -webkit-box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     width: 48px;
     height: 48px;
+    cursor: pointer;
+    margin-left:40%;
+    margin-bottom: 10px;
+}
+.overlay{
+    opacity: 0
+}
+.list-item:hover img{
+    opacity: .5
+}
+.list-item:hover .overlay{
+opacity: 1
+}
+.btn-overlay:hover {
+    background: #ffffff url(../img/arrow.png) no-repeat 20px 18px;
+}
+
+
+/*BREADCRUMBS*/
+.page-nav li{
+    display: inline-block;
+    /*margin-right: 43px;*/
+    margin-bottom: 50px;
+    
+}
+.prs li:first-child{
+    margin-left: 101px;
+}
+.page-nav ul{
+   list-style-type: none;
+}
+.page-nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+.prs li a{
+    border-bottom: 1px solid #6c6c6c;
+    padding:10px 43px 20px 10px;
+}
+.prs li a:hover {
+    color:#212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 18px;
+    border-bottom: 3px solid black;
+
+}
+/*PRODUCTS_PAGE*/
+.products-item{
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.products-item:last-child{
+   margin-right: 0;
+}
+.allproducts-item{
+    margin-left: 98px;
+    margin-bottom: 50px;
+}
+.hidden-prsitem{
+    display: none;
+}
+.icon-loop2{
+    font-family: 'icomoon';
+    color:#212121;
+    font-size: 38px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 140px;
+}
+.icon-loop2:hover{
+    cursor:pointer;
+}
+.icon-loop2:active{
+    transform: rotate(90deg);
+}
+/*PAGE_DETAILS*/
+.prsdetails{
+    background-color:  #f4f4f4;
+    margin-bottom: 72px;
+    border-bottom: 0px solid black;
+    padding-top:10px;
+    display: block;
+    text-align: center;
+    
+}
+.prsdetails li a{
+    margin-right: 15px;
+    color:#6c6c6c;
+    font-size: 17.99px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    transform: scaleY(1.0006);
+}
+.prsdetails li a:hover {
+    color:#212121;
+    font-size: 17.99px;
+    font-weight: 700;
+    text-align: left;
+
+}
+.content-details h2{
+    color:
+#212121;
+font-size: 35.98px;/* Приближение из-за подстановки шрифтов */
+font-weight: 700;
+text-align: center;
+transform: scaleY(1.0005);
+}
+.content-details span{
+    color: #e53935;
+    font-size: 18px; 
+    font-weight: 700;
+    line-height: 48px; 
+    text-align: center;
+    transform: scaleY(1.0005);
+    display: block;
+}
+.details-info{
+    font-family: 'Gotham';
+color: #212121;
+font-size: 16px; /* Приближение из-за подстановки шрифтов */
+font-weight: 300;
+line-height: 24px; /* Приближение из-за подстановки шрифтов */
+text-align: left;
+transform: scaleY(1.0005); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+.price-details{
+    margin-bottom: 49px;
+}
+.currency{
+font-family: 'Gotham';
+color: #212121;
+font-size: 72px; /* Приближение из-за подстановки шрифтов */
+font-weight: 300;
+line-height: 48px; /* Приближение из-за подстановки шрифтов */
+text-align: center;
+transform: scaleY(1.0005); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+
+}
+.details-info p{
+    margin-bottom: 10px;
+    padding-right:10px;
+}
+.details-btn {
+    background-color: #f44336;
+box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+width: 510px;
+height: 71px;
+    display: block;
+    color:
+#ffffff;
+font-size: 21.99px;/* Приближение из-за подстановки шрифтов */
+font-weight: 700;
+line-height: 74px;/* Приближение из-за подстановки шрифтов */
+text-align: center;
+transform: scaleY(1.0005);
+    border-radius: 45px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 49px;
+}
+
+.details-btn:hover {
+    background: #f44336 url(../img/arrow_white.png) no-repeat 350px 26px;
+}
+.content-details{
+    float: right;
+    width: 499px;
+}
+
+.slider-details{
+    float: left;
+    width:570px;
+    position:relative;
+}
+/*SLIDER_DETAILS*/
+.slider-details input[name='slider-switch'] {
+	display: none;
+}
+.slider-details label{
+    padding-top:100%;
+    margin:10px 0 10px 20px;
+    float: left;
+    cursor:pointer;
+    opacity:0.5;
+}
+.slider-details label img{
+	display: block;
+}
+.slider-details input[name='slider-switch']:checked+label {
+	opacity: 1;
+}
+.slider-details input[name='slider-switch']~img{
+  opacity:0;
+}
+.slider-details input[name='slider-switch']:checked + label + img{
+  opacity:1;
+}
+.slider-details>img{
+	transition: all 0.5s;
     position: absolute;
-      left:111px;
-    bottom:0;
-    right:0;
-    top:62px;
+    left:0;
+    top:0;
+    cursor:pointer;
 }
-.btn-overlay:hover{
-    display:inline-block;
+
+/*END SLIDER_DETAILS*/
+.item-details{
+    margin-bottom: 245px;
+    margin-left: 98px;
+    margin-right: 130px;
 }
-.title-overlay{
-    border-radius: 50%;
-    background-color:#ffffff;
-    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
-    width: 48px;
-    height: 48px;
-}*/
+.related-item{
+    margin-left: 98px;
+    margin-bottom: 120px;
+}
+.related-item .products-item{
+    margin-bottom: 0;
+}

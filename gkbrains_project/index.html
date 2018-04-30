@@ -13,14 +13,32 @@
 
 <body>
     <div class="container">
+        
         <header id="header">
+           <div class='slider'>
+    <input type="radio" name="slider1" id="slider1_1" checked="checked">
+    <label for="slider1_1"></label>
+    <div><img src="/img/slider-img.jpg" alt=""></div>
 
+    <input type="radio" name="slider1" id="slider1_2">
+    <label for="slider1_2"></label>
+    <div><img src="/img/slider-img.jpg" alt=""></div>
+
+    <input type="radio" name="slider1" id="slider1_3">
+    <label for="slider1_3"></label>
+    <div><img src="/img/slider.jpg" alt=""></div>
+
+    <input type="radio" name="slider1" id="slider1_4">
+    <label for="slider1_4"></label>
+    <div><img src="/img/slider-img.jpg" alt=""></div>
+</div>
+            
             <div class="header-top">
-                <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="logo" ></a>
 
                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Products</a></li>
+                    <li><a href="index.html" class="active_page">Home</a></li>
+                    <li><a href="interior_product.html">Products</a></li>
                     <li><a href="">History</a></li>
                     <li><a href="">Showroom</a></li>
                     <li><a href="contact.html">Contacts</a></li>
@@ -28,17 +46,29 @@
                 </ul>
                 <div class="clearfix"></div>
             </div>
-
-            <div></div>
-            <div>
-            </div>
+           <!-- <div></div>-->
             <div class="promo">
                 <h2 class="promo-smtitle">TRENDING</h2>
                 <h1 class="promo-title">Fishnet Chair</h1>
                 <p class="promo-text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black or highly polished chrome.</p>
-                <a href="" class="btn">Order Us</a>
+                <a href="interior_products_details.html" class="btn">Order Us</a>
             </div>
-            <div class="slider"></div>
+            
+          <!--slider <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+            <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+       <div class="slides"><img src="img/slider-img.jpg" alt=""></div>
+            <div class="slides"><img src="/img/slider-img.jpg" alt=""></div>
+            <div class="slides"><img src="/img/slider-img.jpg" alt=""></div>
+       
+       -->
         </header>
 
         <section class="content">
@@ -52,28 +82,51 @@
             <div class="clearfix"></div>
             <div class="catalog-item">
                 <div class="list-item">
+                   <img src="img/item/product-1.jpg" alt="">
                     <div class="overlay">
-                        <a href=""><img src="img/item/product-1.jpg" alt=""></a>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="overlay">
-                       <a href="" class="btn-overlay"></a>
-                       <h5 class="title-overlay">Fishnet Chair</h5>
-                       <p class="content-overlay">Seat and back with upholstery made of cold cure foam
+                       <div class="content-overlay">
+                           <a href="" class="btn-overlay"></a>
+                           <h5 class="title-overlay">Fishnet Chair</h5>
+                           <p>Seat and back with upholstery made of cold cure foam
 . Steel frame, available in matt powder-coated black
  or highly polished chrome.</p>
-                        <a href=""><img src="img/item/product-2.jpg" alt=""></a>
+                   </div>
                     </div>
                 </div>
                 <div class="list-item">
-                    <div class="overlay">
-                        <a href=""><img src="img/item/product-3.jpg" alt=""></a>
+                    <img src="img/item/product-2.jpg" alt="">
+                      <div class="overlay">
+                      <div class="content-overlay">
+                       <a href="" class="btn-overlay"></a>
+                       <h5 class="title-overlay">Fishnet Chair</h5>
+                       <p>Seat and back with upholstery made of cold cure foam
+. Steel frame, available in matt powder-coated black
+ or highly polished chrome.</p>
+                   </div>
                     </div>
                 </div>
                 <div class="list-item">
+                   <img src="img/item/product-3.jpg" alt="">
                     <div class="overlay">
-                        <a href=""><img src="img/item/product-4.jpg" alt=""></a>
+                      <div class="content-overlay">
+                       <a href="" class="btn-overlay"></a>
+                       <h5 class="title-overlay">Fishnet Chair</h5>
+                       <p>Seat and back with upholstery made of cold cure foam
+. Steel frame, available in matt powder-coated black
+ or highly polished chrome.</p>
+                   </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                   <img src="img/item/product-4.jpg" alt="">
+                    <div class="overlay">
+                      <div class="content-overlay">
+                       <a href="" class="btn-overlay"></a>
+                       <h5 class="title-overlay">Fishnet Chair</h5>
+                       <p>Seat and back with upholstery made of cold cure foam
+. Steel frame, available in matt powder-coated black
+ or highly polished chrome.</p>
+                   </div>
                     </div>
                 </div>
             </div>
@@ -86,7 +139,7 @@
                     <p class="exclusive-text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</p>
                     <a href="" class="btn">Order Us</a>
                 </div><!--
-                --><div class="exclusive-two">
+                   --><div class="exclusive-two">
                     <h6>exclusive</h6>
                     <h3 class="exclusive-title">
                         Fishnet Chair
@@ -104,43 +157,77 @@
             </div>
             <div class="trend-item">
                 <div class="list-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-11.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="list-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-21.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="list-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-31.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="list-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-41.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="list-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-5.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="list-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-6.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
-            <div class="hot-deal slider">
+            <div class="hot-deal">
+               <div class="slider1">
+               <input type="radio" name="slider2" id="slider2_1" checked="checked">
+    <label for="slider2_1"></label>
+    <div><img src="/img/slider.jpg" alt=""></div>
+
+    <input type="radio" name="slider2" id="slider2_2">
+    <label for="slider2_2"></label>
+    <div><img src="/img/slider-img.jpg" alt=""></div>
+
+    <input type="radio" name="slider2" id="slider2_3">
+    <label for="slider2_3"></label>
+    <div><img src="/img/slider.jpg" alt=""></div>
+
+    <input type="radio" name="slider2" id="slider2_4">
+    <label for="slider2_4"></label>
+    <div><img src="img/slider-img.jpg" alt=""></div>
+</div>
+               <div class="deal-content">
                 <h2 class="deal-smtitle">hot deal</h2>
                 <h3 class="deal-title">
                     Fishnet Chair
                 </h3>
                 <p class="deal-text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black or highly polished chrome.</p>
                 <a href="" class="btn">Order Us</a>
+               </div>
+          <!-- <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>-->
+           <!--slider <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+       <div class="slides"><img src="img/slider-img.jpg" alt=""></div>
+            <div class="slides"><img src="/img/slider-img.jpg" alt=""></div>
+            <div class="slides"><img src="/img/slider-img.jpg" alt=""></div>
+       
+       -->
             </div>
 
             <div class="exclusive">
@@ -153,22 +240,22 @@
                     <a href="" class="btn">Order Us</a>
                 </div>
                 <div class="exclusive-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-2-sm.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="exclusive-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-3-sm.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="exclusive-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-4-sm.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="exclusive-item">
-                    <div class="overlay">
+                    <div class="overlay_">
                         <a href=""><img src="img/item/product-5-sm.jpg" alt=""></a>
                     </div>
                 </div>
@@ -238,6 +325,8 @@
 
         </footer>
     </div>
+    
+
 </body>
 
 </html>
