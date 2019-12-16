@@ -240,7 +240,7 @@ body {
 
 #header-prs-details {
     margin-bottom: 29px;
-    border: 1px solid black;
+   /* border: 1px solid black;*/
     height: 100px;
     position: relative;
 }
