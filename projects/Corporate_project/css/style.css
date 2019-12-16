@@ -146,9 +146,9 @@ header .btn-video .btn-reload {
   background-image: url("../img/Rectangle.png");
 }
 .features {
-  /* height: 707px;*/
+  height: 707px;
   background-image: url("../img/BG.png");
-  /* background-position: center;*/
+  background-position: center;
   /* margin-top: -2.5%;*/
   padding-top: 1px;
 }
