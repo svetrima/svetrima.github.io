@@ -95,6 +95,7 @@ img{
 @media screen and (min-width:320px) and (max-width:703px){
 
     .navigation li a{
+
         font-size: 0.9rem;
     }
     header{
@@ -102,5 +103,8 @@ img{
     }
     li{
         padding: 5px;
+
+      
+
     }
 }
