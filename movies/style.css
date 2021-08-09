@@ -53,6 +53,7 @@ header{
 .navigation{
     display:flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top:20px;
 }
 .navigation li a{
@@ -89,4 +90,17 @@ img{
 .item_title{
     font-weight: 900;
     font-size: 1.1rem;
+}
+
+@media screen and (min-width:320px) and (max-width:703px){
+
+    .navigation li a{
+        font-size: 0.9rem;
+    }
+    header{
+        height: 119px;
+    }
+    li{
+        padding: 5px;
+    }
 }
